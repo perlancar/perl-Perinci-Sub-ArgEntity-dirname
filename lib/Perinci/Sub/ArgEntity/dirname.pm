@@ -10,7 +10,7 @@ use warnings;
 use Complete::Util ();
 
 sub complete_arg_val {
-    Complete::Util::complete_file(@_, filter=>'d');
+    Complete::Util::complete_file(@_, filter=>'d', dig_leaf=>0);
 }
 
 1;
