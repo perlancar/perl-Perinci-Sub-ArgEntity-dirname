@@ -7,10 +7,10 @@ use 5.010001;
 use strict;
 use warnings;
 
-use Complete::Util ();
+use Complete::File ();
 
 sub complete_arg_val {
-    Complete::Util::complete_file(@_, filter=>'d', dig_leaf=>0);
+    Complete::File::complete_file(@_, filter=>'d', dig_leaf=>0);
 }
 
 1;
